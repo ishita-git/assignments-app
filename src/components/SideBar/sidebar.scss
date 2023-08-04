@@ -1,0 +1,85 @@
+.side-bar {
+    background-color: white;
+    display: flex;
+    max-width: 140px;
+    height: 100vh;
+    flex: 0.3;
+    padding: 16px 20px 20px 30px;
+    top: 2px;
+
+    .list-container {
+
+        width: 90px;
+        height: 361px;
+        display: flex;
+        gap: 16px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            hr {
+                margin-top: 50px;
+                border: 1px dotted black;
+            }
+
+
+            li {
+                white-space: nowrap;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 20px 10px 20px;
+                min-height: 70px;
+                max-width: 90px;
+                font-weight: 500;
+                font-size: 12px;
+                cursor: pointer;
+                color: rgb(28, 73, 128);
+
+                &:hover {
+                    border: 2px solid rgb(0, 115, 230);
+                    border-radius: 8px;
+                    background-color: #E5F1FC;
+                }
+
+                .round-status {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px 20px 10px 20px;
+
+
+                    .admin-title {
+                        color: red;
+                        background-color: rgba(255, 0, 0, 0.066);
+                        border-radius: 20px;
+                        border: 1px solid red;
+                        font-size: 10px;
+                        font-weight: 500;
+                        width: 47px;
+                        height: 18px;
+
+                    }
+
+                    .status-title {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 6px;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+}

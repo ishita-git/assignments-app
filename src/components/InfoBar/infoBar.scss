@@ -1,0 +1,396 @@
+.info-bar {
+    max-width: 1224px;
+
+    .container {
+        margin: 0;
+        padding: 0;
+        border: 1px solid #DADCE0;
+        border-radius: 12px;
+        min-height: 114px;
+        display: flex;
+
+        .total-assessment {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            border-right: 1px solid #DADCE0;
+            max-width: 162px;
+            padding: 16px 20px 16px 20px;
+
+
+            .title {
+                font-weight: 600;
+                font-size: 14px;
+                color: #1C4980;
+
+            }
+
+            .number-container {
+
+                display: flex;
+                margin-top: 15px;
+                min-width: 77px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: flex-start;
+
+                .number {
+                    color: #1C4980;
+                    font-weight: 700;
+                    font-size: 20px;
+
+                }
+
+                .icon-container {
+                    background-color: #6448ee1e;
+                    border-radius: 8px;
+                    min-width: 40px;
+                    min-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        top: 10px;
+                        left: 10px;
+                        color: #6548EE;
+
+                    }
+
+                }
+
+
+            }
+
+        }
+
+        .candidates {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            flex: 2;
+            border-right: 1px solid #DADCE0;
+            max-width: 369px;
+            padding: 16px 20px 16px 20px;
+
+            .title {
+                display: flex;
+                justify-content: flex-start;
+                font-weight: 600;
+                font-size: 14px;
+                color: #1C4980;
+
+            }
+
+            .candidates-container {
+                display: flex;
+                max-width: 277px;
+                gap: 20px;
+
+
+                .icon-container {
+
+                    background-color: #6448ee1e;
+                    border-radius: 8px;
+                    min-width: 40px;
+                    min-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        top: 10px;
+                        left: 10px;
+                        color: #6548EE;
+
+                    }
+
+                }
+
+                .total-candidates {
+                    display: flex;
+                    flex-direction: column;
+                    // border-right: 1px solid #DADCE0;
+
+                    .figures {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        .number {
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #1C4980;
+
+                        }
+
+                        .estimation {
+                            color: rgb(102, 201, 40);
+
+                        }
+
+                    }
+
+                    .label {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #1C4980;
+
+                    }
+
+                }
+
+                .who-attempted {
+                    display: flex;
+                    flex-direction: column;
+
+                    .label {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #1C4980;
+                        white-space: nowrap;
+
+                    }
+
+                    .figures {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        .number {
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #1C4980;
+
+                        }
+
+                        .estimation {
+                            color: rgb(102, 201, 40);
+
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+
+        .candidates-source {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+            max-width: 499px;
+            border-right: 1px solid #DADCE0;
+            padding: 16px 20px 16px 20px;
+            gap: 16px;
+
+            .title {
+                display: flex;
+                font-weight: 600;
+                font-size: 14px;
+                color: #1C4980;
+                justify-content: flex-start;
+
+            }
+
+            .candidates-source-container {
+                display: flex;
+                gap: 20px;
+
+                hr {
+                    border-left: 1px solid black;
+
+                }
+
+                .icon-container {
+                    background-color: #e9407b33;
+                    border-radius: 8px;
+                    min-width: 40px;
+                    min-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        top: 10px;
+                        left: 10px;
+                        color: #E9407A;
+
+                    }
+                }
+
+                .email {
+                    display: flex;
+                    flex-direction: column;
+
+                    .label {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #1C4980;
+                        white-space: nowrap;
+
+                    }
+
+                    .figures {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        .number {
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #1C4980;
+
+                        }
+
+                        .estimation {
+                            color: rgb(102, 201, 40);
+
+                        }
+
+                    }
+
+                }
+
+                .social-share {
+                    display: flex;
+                    flex-direction: column;
+
+                    .label {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #1C4980;
+                        white-space: nowrap;
+
+                    }
+
+                    .figures {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        .number {
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #1C4980;
+
+                        }
+
+                        .estimation {
+                            color: rgb(102, 201, 40);
+
+                        }
+
+                    }
+
+                }
+
+                .unique-link {
+                    display: flex;
+                    flex-direction: column;
+
+                    .label {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #1C4980;
+                        white-space: nowrap;
+
+                    }
+
+                    .figures {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        .number {
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #1C4980;
+
+                        }
+
+                        .estimation {
+                            color: rgb(102, 201, 40);
+
+                        }
+
+                    }
+
+                }
+            }
+
+
+
+
+
+        }
+
+        .total-purpose {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            max-width: 188px;
+            padding: 16px 20px 16px 20px;
+            gap: 16px;
+
+
+            .title {
+
+                display: flex;
+                justify-content: flex-start;
+                font-weight: 600;
+                font-size: 14px;
+                color: #1C4980;
+
+            }
+
+            .total-purpose-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .number {
+                    color: #1C4980;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-weight: 700;
+
+
+                }
+
+                .icon-container {
+                    background-color: rgba(0, 115, 230, 0.19);
+                    border-radius: 8px;
+                    min-width: 40px;
+                    min-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        top: 10px;
+                        left: 10px;
+                        color: rgb(0, 115, 230);
+
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}

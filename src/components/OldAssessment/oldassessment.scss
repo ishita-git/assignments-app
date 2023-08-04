@@ -1,0 +1,99 @@
+.old-assessment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 388px;
+    min-height: 209px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px dotted #DADCE0;
+    gap: 16px;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        min-width: 356px;
+        min-height: 109px;
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .icon-container {
+                width: 50px;
+                height: 50px;
+                padding: 15px 14.9px 15px 14px;
+                border-radius: 12px;
+                background-color: #6448ee31;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    color: #6548EE;
+
+                }
+            }
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+
+                .label {
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: left;
+
+                    color: #1C4980;
+                }
+
+                .small-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .job {
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-align: left;
+                        color: #1C4980;
+                    }
+                    hr{
+                        border-right: 1px solid black;
+                    }
+
+                    .date-container {
+                        font-size: 12px;
+                        font-weight: 500;
+                        text-align: left;
+                        color: #8DA4BF;
+                    }
+                }
+            }
+
+        }
+
+        .three-dots {}
+
+    }
+
+    hr {
+        border-bottom: 1px dotted black;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        .left{
+
+        }
+        .right{
+
+        }
+
+    }
+}
