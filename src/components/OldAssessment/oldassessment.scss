@@ -60,7 +60,8 @@
                         text-align: left;
                         color: #1C4980;
                     }
-                    hr{
+
+                    hr {
                         border-right: 1px solid black;
                     }
 
@@ -88,11 +89,113 @@
         align-items: center;
         justify-content: space-between;
         gap: 14px;
-        .left{
+        min-width: 356px;
+        min-height: 36px;
+
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            justify-content: flex-start;
+
+            .duration {
+
+                display: flex;
+                flex-direction: column;
+
+                .label {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #1C4980;
+                }
+
+                .number {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: left;
+                    color: #1C4980;
+
+                }
+            }
+
+            .questions {
+                display: flex;
+                flex-direction: column;
+
+                .label {
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #1C4980;
+                }
+
+                .number {
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: left;
+                    color: #1C4980;
+                }
+
+            }
 
         }
-        .right{
 
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .share-container {
+                display: flex;
+                min-width: 77px;
+                min-height: 30px;
+                padding: 2px 8px 2px 6px;
+                border-radius: 50px;
+                border: 1px solid #1C4980;
+                gap: 4px;
+
+                .icon {
+                    color: #1C4980;
+                }
+
+                .label {
+                    display: flex;
+                    align-items: center;
+                    color: #1C4980;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-align: left;
+
+                }
+
+
+            }
+
+            .user-container {
+                display: flex;
+                width:30px;
+                height:30px;
+                padding: 5px 6px 5px 6px;
+                border-radius: 50%;
+                border: 1px solid #6548EE;
+                gap: 10px;
+                background-color: #6548EE;
+                .text{
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                }
+
+
+
+            }
         }
 
     }
