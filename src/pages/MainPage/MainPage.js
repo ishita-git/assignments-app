@@ -9,9 +9,18 @@ import Modal from "../../components/Modal/Modal";
 const MainPage = () => {
   const [click, setClick] = useState(false);
 
+  const openModal = () => {
+    setClick(true);
+  };
+
+  const closeModal = () => {
+    setClick(false);
+  };
+
   return (
     <div className="main-page">
-      <Modal click={click}/>
+       {click && <div className="backdrop" onClick={closeModal} />}
+       <Modal click={click} closeModal={closeModal} />
       <SideBar />
       <div className="main-content">
         <div className="info-title">

@@ -1,13 +1,17 @@
 import React from "react";
 import CloseIcon from "@mui/icons-material/Close";
+import cx from "classnames"; 
 import "./modal.scss";
 import Input from "../Input/Input";
 
-const Modal = ({ click }) => {
+const Modal = ({ click ,closeModal}) => {
   if (click === false) return;
+  const modalClasses = cx("modal", { open: click }); 
 
   return (
-    <div className="modal backdrop">
+
+    <div className={modalClasses}>
+      <div className="backdrop" onClick={closeModal} />
       <div className="title-container">
         <div className="title">Create new assessment</div>
         <div className="icon-container">
@@ -44,6 +48,7 @@ const Modal = ({ click }) => {
         <button>Save</button>
       </div>
     </div>
+
   );
 };
 
