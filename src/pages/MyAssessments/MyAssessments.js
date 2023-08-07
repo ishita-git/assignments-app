@@ -3,11 +3,11 @@ import './myAssessments.scss'
 import NewAssessment from '../../components/NewAssessment/NewAssessment'
 import OldAssessment from '../../components/OldAssessment/OldAssessment'
 
-const MyAssessments = () => {
+const MyAssessments = ({click, setClick}) => {
   return (
     <div className='my-assessments'>
       <div className='container'>
-        <NewAssessment/>
+        <NewAssessment click={click} setClick={setClick}/>
         <OldAssessment/>
         <OldAssessment/>
       </div>

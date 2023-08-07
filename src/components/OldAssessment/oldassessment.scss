@@ -81,7 +81,8 @@
     }
 
     hr {
-        border-bottom: 1px dotted black;
+        border: 1px dotted #DADCE0;
+        width: 356px;
     }
 
     .bottom {
@@ -191,6 +192,7 @@
                     display: flex;
                     align-items: center;
                     color: #FFFFFF;
+                    font-weight: 700;
                 }
 
 

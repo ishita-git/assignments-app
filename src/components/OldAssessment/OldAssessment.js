@@ -15,7 +15,7 @@ const OldAssessment = () => {
                         <div className='label'>Math Assessment</div>
                         <div className='small-text'>
                             <div className='job'>Job</div>
-                            <hr />
+                           
                             <div className='date-container'>< CalendarMonthOutlinedIcon />20 April 2023</div>
                         </div>
 
