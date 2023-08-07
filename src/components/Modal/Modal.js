@@ -35,7 +35,7 @@ const Modal = ({ click ,closeModal}) => {
           <Input label={"Description"} select={true} />
         </div>
         <div>
-          <Input label={"Skills"} placeholder={"Type Here"} />
+          <Input label={"Skills"} placeholder={"Type Here"} multiSelect={true} />
         </div>
         <div>
           <Input
